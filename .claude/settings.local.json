@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"c:\\\\Users\\\\bahti\\\\Documents\\\\Робот САЙТ ЗАКАЗ\")",
+      "WebSearch"
+    ]
+  }
+}

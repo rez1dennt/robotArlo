@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /php/
+
+Sitemap: https://arlo-robot.ru/sitemap.xml

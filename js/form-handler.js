@@ -38,10 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!/^\d$/.test(e.key)) e.preventDefault();
         });
 
-        input.addEventListener('paste', (e) => {
-            e.preventDefault();
-            input.value = (e.clipboardData || window.clipboardData).getData('text');
-            input.dispatchEvent(new Event('input'));
+        input.addEventListener('paste', () => {
+            // Allow native paste; 'input' event fires after paste and applies mask
+            setTimeout(() => input.dispatchEvent(new Event('input')), 0);
         });
 
         input.addEventListener('focus', () => {

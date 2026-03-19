@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(dir \"c:\\\\Users\\\\bahti\\\\Documents\\\\Робот САЙТ ЗАКАЗ\")",
-      "WebSearch"
+      "WebSearch",
+      "Bash(cwebp -version)",
+      "Bash(magick -version)",
+      "Bash(ffmpeg -version)"
     ]
   }
 }
